@@ -13,7 +13,7 @@ function App() {
   const [totalResults, setTotalResults] = useState(0);
   const [totalPages, setTotalPages] = useState(1);
 
-  const API_KEY = "ff5c7e15afa448d184410f5fcc786bfa";
+  const API_KEY = process.env.VITE_NEWS_API_KEY;
   const PAGE_SIZE = 20;
 
   const fetchNews = async () => {
